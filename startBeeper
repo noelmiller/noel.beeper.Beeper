@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+zypak-wrapper /app/bin/beeper/beeper

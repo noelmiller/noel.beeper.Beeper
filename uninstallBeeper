@@ -1,0 +1,2 @@
+#!/bin/bash
+flatpak uninstall noel.beeper.Beeper

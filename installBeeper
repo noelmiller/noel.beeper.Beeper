@@ -1,0 +1,6 @@
+#!/bin/bash
+curl https://download.beeper.com/linux/appImage/x64 -o beeper.AppImage
+chmod +x beeper.AppImage
+./beeper.AppImage --appimage-extract
+flatpak-builder build-dir --force-clean noel.beeper.Beeper.yml
+flatpak-builder --user --install --force-clean build-dir noel.beeper.Beeper.yml
